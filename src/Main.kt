@@ -125,7 +125,10 @@ fun main() {
 
 
 
+
+/*
 fun main() {
+
     val matrix = arrayOf(
         intArrayOf(1, 2, 1, 2),
         intArrayOf(1, 2, 6, 5),
@@ -141,7 +144,9 @@ fun main() {
 }
 
 fun calculatePrimaryDiagonalSum(matrix: Array<IntArray>, diaganal: (index: Int, size: Int) -> Int): Int {
-    val size = min(matrix.size, matrix.minOf{ it.size })//եթե անհամաչափ զանգված է, պետք է գտնել ամենափոքր size ուենցող տողը
+//եթե անհամաչափ զանգված է, պետք է գտնել ամենափոքր size ուենցող տողը
+
+    val size = min(matrix.size, matrix.minOf{ it.size })
 
     var sum = 0
 
@@ -150,6 +155,7 @@ fun calculatePrimaryDiagonalSum(matrix: Array<IntArray>, diaganal: (index: Int, 
     }
     return sum
 }
+*/
 
 /*
 fun main() {
@@ -183,4 +189,32 @@ fun main() {
 }
 */
 
-// write a function that receives work day as a parametr and it prints whether the
+// Write a function that receives work day as a parameter, and it prints whether the day is workday
+// enum
+import WeekDay. *
+enum class WeekDay {
+    Monday,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY
+}
+
+/*  Two important benefits
+     1. Predefine
+
+
+ */
+/*fun checkWorkDay (dayOfWeek: String) = when (dayOfWeek){
+    Monday, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY-> true
+       SATURDAY, SUNDAY -> false
+}
+
+fun main(){
+val workDay = l
+}*/
+
+
+
