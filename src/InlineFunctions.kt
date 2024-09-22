@@ -9,13 +9,13 @@ inline fun calculate(a: Int, b: Int): Int {
 }
 
 
-// inline function - in case of "inline calculate", a+b is directl
+// inline function - in case of "inline calculate", a+b is directly copied here
 /*
 
 1․ բայթ կոդը շատանում է,
 2․ private-ին հասանելիություն չունի,
 3․ public-ին հասանելիություն ունի,
-4. noinline operation:(Int, Int)->Int) - այն ունենաք
+4. noinline operation:(Int, Int)->Int) - լյամբդա չենք կարող փոխանցել եթե inline է
 */
 
 fun main(args: Array<String>) {
