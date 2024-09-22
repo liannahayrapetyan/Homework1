@@ -1,3 +1,6 @@
+import java.nio.channels.Selector
+import kotlin.math.min
+
 // Homework 1
 
 /*import factory.ShapeFactory
@@ -11,9 +14,10 @@ fun main() {
     println("Circle area: ${circle.calculateArea()}")
     println("Rectangle area: ${rectangle.calculateArea()}")
     println("Square area: ${square.calculateArea()}")
-}*/
+}
 // https://www.w3resource.com/kotlin-exercises/class/kotlin-class-exercise-14.php#google_vignette
 
+*/
 
 
 // Homework 2
@@ -178,3 +182,5 @@ fun main() {
     println(secondaryDiagonalSum)
 }
 */
+
+// write a function that receives work day as a parametr and it prints whether the
