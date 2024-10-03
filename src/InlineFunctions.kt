@@ -8,7 +8,7 @@ inline fun calculate(a: Int, b: Int): Int {
     return a + b
 }
 
-
+// crossinline - performance benefit exists (meaning that function class is not created, but you still can't  local)
 // inline function - in case of "inline calculate", a+b is directly copied here
 /*
 
