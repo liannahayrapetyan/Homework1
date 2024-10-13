@@ -1,52 +1,6 @@
-fun approach2(nums1: List<Int>, nums2: List<Int>): List<Int>{
-
-    var union = mutableListOf<Int>()
-
-    var i = 0
-    var j = 0
-
-    while(i < nums1.size && j < nums2.size){
-        when{
-            nums1[i] < nums2[j] -> {
-                union.add(nums1[i])
-                i++
-            }
-            nums1[i] > nums2[j] -> {
-                union.add(nums2[j])
-                j++
-            }
-            else -> {
-                union.add(nums1[i])
-                i++
-                j++
-            }
-        }
-    }
-
-    while (i < nums1.size){
-        union.add(nums1[i])
-        i++
-    }
-
-    while (j < nums2.size){
-        union.add(nums2[j])
-        j++
-    }
-
-    return union
-}
-
-fun main(){
-
-    val nums1 = listOf<Int>(1,3,5,7,9,12)
-    val nums2 = listOf<Int>(0,1,2,3,4,6,8,10,12)
-
-    val union = approach2(nums1, nums2)
-    println(union)  // Output: [1, 1, 2, 3, 3, 4]
-}
 
 
-/*
+
 
 // Homework 1
 
@@ -84,14 +38,14 @@ fun main() {
     val array1 = listOf(1, 2, 3, 4, 5)
     val array2 = listOf(1, 3, 4)
     val resultArray = mergeArrays(array1, array2)
-    println(resultArray)  // Output: [1, 1, 2, 3, 3, 4]
+    println(resultArray)  // Output: [1, 1, 2, 3, 3, 4, 4, 5]
 }
 
 
 
 
 
-
+/*
 // Homework2
 fun maxDistanceBetweenIdenticalChars(s: String): Int {
     val charIndices = mutableMapOf<Char, Int>()
